@@ -1,0 +1,4 @@
+<apex:page >
+  Happy New Year <br/>
+  {!$Label.Wishes}
+</apex:page>

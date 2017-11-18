@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="rh2" type="sf.library">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/lib/rh2" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/lib/rh2" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="MC4SF" type="sf.library">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/lib/MC4SF" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/lib/MC4SF" />
+    </SOURCES>
+  </library>
+</component>

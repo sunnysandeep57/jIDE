@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="tgen" type="sf.library">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/lib/tgen" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/lib/tgen" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,28 @@
+<apex:page StandardController="Account"> 
+    <apex:form >
+        <apex:pageBlock Title="Account Edit Information">
+        <apex:pageBlockButtons >
+                    <apex:commandButton action="{!Edit}" Value="Edit" /> 
+                    <apex:commandButton action="{!Delete}" Value="Delete"/>
+        </apex:pageBlockButtons>
+
+            <apex:pageBlockSection Title="Account Information" columns="2">
+                <apex:outputField value="{!Account.Name}" />
+                <apex:outputField value="{!Account.Phone}"/>
+                <apex:outputField value="{!Account.AccountNumber}"/>
+                <apex:outputField value="{!Account.rating}"/>
+                <apex:outputField value="{!Account.SIC}"/>
+                <apex:outputField value="{!Account.Industry}"/>
+                 <apex:outputField value="{!Account.Checkcon__c}"/>
+                
+            </apex:pageBlockSection>
+            <apex:pageBlockSection Title="Address Information" columns="2">
+            <apex:outputField value="{!Account.BillingStreet}"/>
+            <apex:outputField value="{!Account.BillingCity}"/>
+            <apex:outputField value="{!Account.BillingState}"/>
+            <apex:outputField value="{!Account.BillingCountry}"/>
+            
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

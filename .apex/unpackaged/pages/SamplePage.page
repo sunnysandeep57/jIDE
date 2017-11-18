@@ -1,0 +1,20 @@
+<apex:page tabStyle="Account">
+<apex:form >
+ <apex:pageBlock title="New Sample Page" helpUrl="www.google.com" helpTitle="GooglE">
+         <apex:pageBlockSection title="My Content Section" Columns="3" collapsible="False" showHeader="true"> 
+
+         <apex:pageBlockSectionItem >hi</apex:pageBlockSectionItem>
+         </apex:pageBlockSection>                                        
+<apex:pageBlocksection title="Content section 2">
+
+<apex:pageBlockSectionItem >Section1</apex:pageBlockSectionItem>
+<apex:pageBlockSectionItem >Section2</apex:pageBlockSectionItem>
+<apex:pageBlockSectionItem >Section3</apex:pageBlockSectionItem>
+<apex:pageBlockSectionItem >Section4</apex:pageBlockSectionItem>
+<apex:pageBlockSectionItem >Section5</apex:pageBlockSectionItem>
+</apex:pageBlocksection>
+ </apex:pageBlock>
+
+ </apex:form>
+ 
+</apex:page>

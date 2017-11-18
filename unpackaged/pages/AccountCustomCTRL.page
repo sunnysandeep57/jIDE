@@ -1,0 +1,12 @@
+<apex:page controller="AccountCustomCTRL" tabStyle="Customer__c">
+<apex:form >
+    <Apex:pageBlock id="refresh">
+        <Apex:pageMessages ></Apex:pageMessages>    
+            <apex:pageBlockSection Title="Account Information" >
+                <apex:inputText value="{!accountName}" Label="Name"/>
+                <apex:inputText value="{!accountPhone}" Label="Phone"/>
+                <apex:commandButton Action="{!CreateAccount}" value="CREATE" reRender="refresh"/>
+            </apex:pageBlockSection>  
+    </Apex:pageBlock>
+</apex:form>
+</apex:page>

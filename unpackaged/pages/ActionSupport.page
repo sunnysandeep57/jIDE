@@ -1,0 +1,24 @@
+<apex:page standardController="Account" tabStyle="Customer__c" extensions="SupportCTRL">
+    <apex:form id="newBlk" >
+        <apex:pageBlock Title="Action Support Check" >
+            <apex:pageBlockSection title="Address Information" id="pgblk" columns="2">
+                <apex:inputField value="{!Account.name}" label="Account Name"/>
+                <apex:inputField value="{!Account.phone}" label="Account Name"/>
+                <apex:inputField value="{!Account.rating}" label="Account Name"/>                
+                <apex:inputField value="{!Account.Industry}" label="Account Name"/> 
+                <apex:selectList value="{!selectList}" Multiselect="False" size="1" label="Country List:">
+                    <apex:selectOptions value="{!selectedcountryas}"/>
+                    <apex:actionSupport event="onchange" reRender="newBlk" action="{!calstates}"/>
+                </apex:selectList>
+                <!--<apex:outputText value="{!selectList}" Label="Country selected as :"/>-->
+                <apex:commandButton Action="{!view}"  value="view" reRender="pgblk"/> 
+                <apex:selectList value="{!statecountry}" multiselect="False" size="1" rendered="{!var}" label="states for {!selectList}:">
+                        <apex:selectOptions value="{!stateList}" />                    
+                    </apex:selectList>
+            </apex:pageBlockSection>
+            <!--<apex:pageBlockSection title="State List:" rendered="{!var}">-->
+                    
+            <!--</apex:pageBlockSection>-->
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

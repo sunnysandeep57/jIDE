@@ -1,0 +1,16 @@
+<apex:page controller="SampleCTRL2" tabStyle="Customer__c" >
+    <apex:form >
+        <apex:pageBlock Title="SEARCH">
+            <apex:pageBlockSection title="GOOGLE SEARCH" columns="3" >
+                <apex:inputText value="{!searchkey}" label="Googlevalue"/>    
+                <apex:commandButton action="{!searchgoogle}" value="GoogleSearch"/>
+                <apex:commandLink action="{!googlegoogle}" value="GOOGLEEE" target="_blank"/>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection title="YAHOO SEARCH" columns="3">
+                <apex:inputText value="{!yahookey}" label="Yahoovalue"/>    
+                <apex:commandButton action="{!searchyahoo}" value="yahooSearch" />
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form> 
+</apex:page>

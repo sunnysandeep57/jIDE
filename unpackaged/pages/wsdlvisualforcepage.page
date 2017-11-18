@@ -1,0 +1,23 @@
+<apex:page tabStyle="Account" controller="RegisterCustomer">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection title="Personal Information" >
+                <apex:inputField value="{!objA.name}"/>
+                <apex:inputField value="{!objA.phone}"/>                
+            </apex:pageBlockSection>                            
+            <apex:pageBlockSection Title="Additional Info"  >
+                <apex:inputField value="{!objA.Billingstreet}"/>
+                <apex:inputField value="{!objA.BillingCountry}"/>
+                <apex:inputField value="{!objA.Billingcity}"/>
+                <apex:inputField value="{!objA.BillingPostalCode}"/>                                
+                <apex:inputField value="{!objA.BillingState}"/> 
+            </apex:pageBlockSection>               
+            <apex:pageBlockSection Title="Additional Info" >
+                 <apex:inputField value="{!objA.Description}"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons >
+                <Apex:commandButton Action="{!submit}" value="Register"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

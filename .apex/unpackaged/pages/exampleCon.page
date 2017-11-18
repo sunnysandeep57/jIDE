@@ -1,0 +1,16 @@
+<!--  Page: -->
+<apex:page controller="exampleCon">
+    <apex:form >
+    <apex:pageBlock id="pgblk" >
+        <apex:outputpanel id="counter">
+            <apex:commandButton value="Click Me!: {!count}" reRender="pgblk"/>
+            <apex:actionSupport event="onmouseover" 
+                                action="{!incrementCounter}" 
+                                rerender="counter" status="counterStatus"/>
+        </apex:outputpanel>
+        <apex:actionStatus id="counterStatus" 
+                           startText=" (incrementing...)" 
+                           stopText=" (done)"/>
+    </apex:pageBlock>
+    </apex:form>
+</apex:page>

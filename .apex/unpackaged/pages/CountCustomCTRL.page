@@ -1,0 +1,38 @@
+<apex:page controller="CountCTRL" tabStyle="Customer__c" Action="{!onloadMethod}">
+ <apex:form >
+ <script>
+ 
+ function searchfun(){
+ 
+// alert("===");
+ functionmethod();
+ }
+ 
+ </script>
+     <Apex:actionFunction name="functionmethod" action="{!searchbutton}" rerender="pgblk" />
+     <apex:pageBlock Title="Count of Accs" >
+         <apex:pageBlocksection Title="Section Search" columns="8" >
+             <apex:inputText value="{!searchvalue}" label="search" onkeyup="searchfun();" />
+             <apex:selectList value="{!ratingList}" multiselect="False" size="1">
+                 <apex:selectOptions value="{!optionList}" ></apex:selectOptions>
+             </apex:selectList>
+           <!--  <apex:commandButton Action="{!searchbutton}" value="Clicktosearch" reRender="pgblk" status="counterstatus"/> -->
+             <apex:actionStatus id="counterstatus" >
+                     
+                     <apex:facet name="start">
+                            <img src = "https://i.redd.it/ounq1mw5kdxy.gif" width="90 px"/>
+                     </apex:facet>
+            </apex:actionStatus>
+             
+             
+             <apex:outputText value="{!count}" Label="Count as :"></apex:outputText>
+         </apex:pageBlocksection>
+         <apex:pageBlockTable value="{!accounttable}" var="acc" id="pgblk">
+             <apex:column value="{!acc.id}" width="300px"/>
+             <apex:column value="{!acc.name}" width="300px"/>
+             <apex:column value="{!acc.phone}" width="300px"/>
+             <apex:column value="{!acc.rating}" width="300px"/>             
+         </apex:pageBlockTable>
+     </apex:pageBlock>
+ </apex:form>
+</apex:page>

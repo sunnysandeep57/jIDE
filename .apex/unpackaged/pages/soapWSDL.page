@@ -1,0 +1,14 @@
+<apex:page controller="orgWSDL"  tabStyle="Customer__c" >
+ <apex:form >
+     <apex:pageBlock >
+         <apex:pageBlockSection >
+             <Apex:inputField value="{!orgA.name}"/>
+             <Apex:inputField value="{!orgA.phone}"/>
+             
+         </apex:pageBlockSection>
+         <apex:pageBlockButtons >
+                 <apex:commandButton value="Submit" Action="{!submit}"/>
+             </apex:pageBlockButtons>
+     </apex:pageBlock>
+ </apex:form>
+</apex:page>

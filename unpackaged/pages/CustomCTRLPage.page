@@ -1,0 +1,34 @@
+<apex:page controller="SampleCustomCTRL" tabStyle="Customer__c" rendered="True">
+    <apex:form >
+        <apex:pageBlock Title="Calculator App" >
+            <!--<apex:pageBlockButtons >
+                <apex:commandButton Action="{!Add}" value="Add" reRender="pgblk"/>
+           </apex:pageBlockButtons>-->
+            <apex:pageBlockSection Title="Addition" collapsible="False" columns="1"  id="pgblk">
+                <apex:inputText value="{!value1}" Label="First Number"/>
+                <apex:inputtext value="{!value2}" Label="Second Number"/>
+                <apex:outputText value="{!showResults}"  label="Show Result"> </apex:outputText>
+                <apex:outputText value="{!shownewResults}"  label="NewResult-Subtraction" > </apex:outputText>
+                <apex:outputText value="{!Multiplication}" label="Multiplication of two numbers"></apex:outputText>
+                <apex:outputText value="{!division}" label="Division of two numbers"></apex:outputText>    
+                <apex:commandButton action="{!Add}" value="Calculate" reRender="pgblk" />           
+            </apex:pageBlockSection>   
+            
+            <apex:pageBlockSection Title="Select Picklist" collapsible="True" columns="1" id="ctrblk" >
+                <apex:selectList value="{!selectcountry1}" label="Pick the countries" multiselect="False" size="1">
+                    <apex:selectOption itemvalue="INDIA" ></apex:selectOption>
+                    <apex:selectOption itemvalue="UK" ></apex:selectOption>
+                    <apex:selectOption itemvalue="USA" ></apex:selectOption>                   
+                </apex:selectList>
+                <apex:outputText value="{!selectcountry1}" Label="Country selected as :"/>            
+                <apex:selectList value="{!selectcountry2}" Label="Pick the countries" multiselect="False" size="1">
+                    <apex:SelectOptions value="{!country}"></apex:SelectOptions>                
+                </apex:selectList>
+                <apex:outputText value="{!selectcountry2}" label="Country selected as :"/>    
+                <apex:commandButton action="{!view}" value="View" reRender="ctrblk"/>        
+            </apex:pageBlockSection>
+            
+            
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

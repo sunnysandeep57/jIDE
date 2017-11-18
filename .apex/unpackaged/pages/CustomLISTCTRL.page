@@ -1,0 +1,25 @@
+<apex:page controller="ListCustomCtrl" TabStyle="Customer__c">
+<apex:stylesheet value="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css"/>
+    <apex:includeScript value="//code.jquery.com/jquery-1.10.2.js"/>
+    <apex:includeScript value="//code.jquery.com/ui/1.11.2/jquery-ui.js"/>
+    <script>
+        $(document).ready(function(){
+            $(document.getElementById("{!$Component.theForm.thePageBlock.theTable}")).find("tbody").sortable();
+        });
+    </script>
+
+  <apex:form id="theForm">
+      <apex:pageBlock Title="ACCOUNT INFO" id="thePageBlock">
+          <apex:inputText value="{!searchkey}" label="Input as:"/>
+          <apex:selectList value="{!selectrating}"  multiselect="False" size="1">
+              <apex:selectOptions value="{!rating}"></apex:selectOptions>
+          </apex:selectList>
+          <apex:commandButton Action="{!SearchRecords}" value="Search"/>
+          <apex:pageBlockTable value="{!AccList}" var="acct" columns="100" id="theTable">
+              <apex:column value="{!acct.Name}" style="width:30%"  headerValue="ACC Names"/>
+              <apex:column value="{!acct.Phone}" style="width:10%" headerValue="ACC Phone"/>                           
+              <apex:column value="{!acct.Rating}" headerValue="ACC Rating"/> 
+          </apex:pageBlockTable>
+      </apex:pageBlock>
+  </apex:form>
+</apex:page>

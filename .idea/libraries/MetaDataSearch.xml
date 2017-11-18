@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="MetaDataSearch" type="sf.library">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/lib/MetaDataSearch" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/lib/MetaDataSearch" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="dsfs" type="sf.library">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/lib/dsfs" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/lib/dsfs" />
+    </SOURCES>
+  </library>
+</component>

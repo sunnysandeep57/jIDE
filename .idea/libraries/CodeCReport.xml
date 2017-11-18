@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="CodeCReport" type="sf.library">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/lib/CodeCReport" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/lib/CodeCReport" />
+    </SOURCES>
+  </library>
+</component>

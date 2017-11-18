@@ -1,0 +1,12 @@
+<apex:page controller="XMLParseList">
+    <apex:form >
+        <apex:pageBlock >             
+                <apex:pageBlockTable value="{!lstW}" var="con">
+                    <apex:column headerValue="ID" value="{!con.Id}"/>
+                    <apex:column headerValue="NAME" value="{!con.Name}"/>
+                    <apex:column headerValue="COST" value="{!con.cost}"/>                                        
+                    <apex:column headerValue="Description" value="{!con.Description}"/> 
+                </apex:pageBlockTable>            
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

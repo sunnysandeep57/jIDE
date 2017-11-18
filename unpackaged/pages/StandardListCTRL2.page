@@ -1,0 +1,20 @@
+<apex:page standardController="Account" recordSetVar="AllAccounts" tabStyle="Account" >
+<apex:form >
+<apex:pageBlock >
+<apex:pageBlockButtons >
+<apex:commandButton action="{!previous}" value="Previous"/>  &nbsp; &nbsp;
+<apex:commandButton action="{!Next}" value="Next"/>
+</apex:pageBlockButtons>
+<apex:pageBlockSection title="All Account Names" Columns="2">
+<apex:pageBlockTable value="{!allaccounts}" var="acc">
+<apex:column value="{!acc.name}" headerValue="Account Names"/>
+<apex:column value="{!acc.Id}" HeaderValue="Account Id's"/>
+</apex:pageBlockTable>
+</apex:pageBlockSection>
+<apex:panelGrid columns="2">
+<apex:commandButton Action="{!Previous}" value="Previous"/>
+<apex:commandButton Action="{!Next}" value="Next"/>
+</apex:panelGrid>
+</apex:pageBlock>
+</apex:form>
+</apex:page>
